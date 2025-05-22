@@ -188,4 +188,41 @@ h2{
         line-height: 150%;       /* altura da linha ou espaçamento entre linhas */
         margin-bottom: 15px;    /* Margem inferior */
     }
+    ul,ol{
+        padding-left: 20px;
+        list-style: square; /* modificar o marcador */
+        li{
+            line-height: 170%;
+        }
+    }
 }
+
+.grid-especialidades{
+    display:flex ;           
+    flex-wrap: wrap;         
+    gap: 25px;  
+              
+    *{
+        flex-basis: 300px;      
+        flex-grow: 1;           
+        flex-shrink: 1;         
+    }
+    img{
+        width: 100%;            
+        object-fit: cover;      
+        height: 200px;          
+    }
+    h3{
+        color:#3b5ec8;
+        margin: 15px 0 8px 0;
+    }
+    P{
+        font-size: 0,95rem;
+        padding: 0px 10px;
+    }
+}
+
+
+
+
+    

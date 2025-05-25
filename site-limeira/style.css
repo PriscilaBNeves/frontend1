@@ -1,26 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* é um seletor de formatação iniversal e aplica-se tods as tags*/
-* {
-    margin: 0%;        /* margem externa (borda pra fora)*/
-    padding: 0%;      /*maregm interna ( borda pra dentro na logo )*/
-}
 
-/*Regra*/
-body {
-    /*Propridade: valor*/
-   /* font-family: Arial, Helvetica, sans-serif; */
-   font-family:'poppins', sans-serif;
-
+*{
+    margin:0;
+    padding:0;
 }
 
 header {
-    background-color: #0e365f;    /* cor de fundo */
-    text-align: center;          /* centraliza um texto */
-    margin:0 ;                 /* top rigt bottom left */
-    padding:20px 0px 20px 0px;     /* top rigt bottom left */
+    background-color:#040d2d;    /* cor de fundo */
+    text-align: center;             /* centraliza um texto */
+    margin: 0%;                     /* top rigt bottom left */
+    padding: 0px 0px 0px 0px;     /* top rigt bottom left */
 
+}
+
+body{
+    font-family:'poppins', sans-serif;
 }
 
 footer {
@@ -29,10 +25,10 @@ footer {
     text-align: center;
     color: #777;
 }
-/* Formatação genérica para os links*/
+
 a{
     text-decoration: none;      /* retirar o sublinhado dos links */
-    color: #492291;          /* alterar a cor dos links */
+    color: #0d0e5a;          /* alterar a cor dos links */
 }
 a:hover{
     text-decoration: underline;     /* voltar o sublinhao quando passar o mouse em cima */
@@ -55,14 +51,13 @@ h2{
     margin-top: 50px;
 }
 
-/* o ( . ) indica que o "destaque" é uma classe e não uma tag */
 .destaque {
     text-align: center;
 
     p {
         /*CSS nesting (alinhamento de CSS*/
         /* p{} vai mudar o paragralho dentro da class*/
-        color: #444;                 /* cor da letra*/
+        color: #362626;                 /* cor da letra*/
         font-size: 1.2rem;             /* tamanho da letra*/
         line-height: 150%;             /* altura da linha ou espassamento entre linhas*/
     }
@@ -81,7 +76,7 @@ h2{
     flex-wrap: wrap;         /* permitir a quebra de linhas dos elementos */
     gap: 25px;               /* espaçamento entre os elementos */
     *{
-        flex-basis: 250px;      /* tamanho inicial para o elemento filho */
+        flex-basis: 300px;      /* tamanho inicial para o elemento filho */
         flex-grow: 1;           /* permite aumeto de tamanho */
         flex-shrink: 1;         /* permite reduzir o tamanho */
     }
@@ -101,20 +96,16 @@ h2{
     img{
         width: 100%;            /* fixa a largura proporcional */
         object-fit: cover;      /* imagem se ajusta ao conteiner proporção original */
-        height: 160px;          /* mantem altura original da imagem */
+        height: 250px;          /* mantem altura original da imagem */
     }
     h3{
-        color:#6a3bc8;
+        color:#4009d8;
         margin: 15px 0 8px 0;
     }
     P{
         font-size: 0,95rem;
         padding: 0px 10px;
     }
-}
-/* Formatata o comportamento do card */
-.card:hover {
-    transform: translateY(-5px)     /* modifica a aparência visual do elemento */
 }
 
 .redes-sociais{
@@ -156,73 +147,70 @@ h2{
     a:nth-child(5){
         background-color: #000;    /* Cor para o tiktok */
     }
-
 }
 
-    /* Link voltar rodapé das páginas */
 .voltar{
     text-align: center;
     margin-top: 20px;
 }
 
-/* Formatação do grid de clínica */
-.grid-clinica{
-    display:flex;           /* opção por layout em grid (grade). O padrão para o display é block */
-    justify-content: space-between;     /* alinha pelas margens externas ( direita e esquerda ) */
+.card:hover {
+    transform: translateY(-6px)     /* modifica a aparência visual do elemento */
+}
+
+.grid-municipio{
+    display:flex;           
+    justify-content:space-between;    
     gap: 1.5rem;
     align-items: flex-start;
+
+    div{
+        flex-grow: 1;   
+        flex-shrink: 1;    
+        flex-basis: 300px;   
+    
+
+    img{
+        width: 100%;    
+    }
+
+    h2{
+        text-align: start;     
+        margin-bottom: 20px;   
+        margin-top: 0;             
+    }
+    p{
+        line-height: 150%;       
+        margin-bottom: 15px;    
+    }
+}
+j
+  
+    }
+
+.grid-turismo{
+    display:flex;           /* opção por layout em grid (grade). O padrão para o display é block */
+    justify-content:space-between;     /* alinha pelas margens externas ( direita e esquerda ) */
+    gap: 1.5rem;
+    align-items: flex-start;
+
     div{
         flex-grow: 1;   /* permite expandir a largura */
         flex-shrink: 1;     /* permite reduzir a largura */
         flex-basis: 300px;   /* tamanho inicial */
     }
+
     img{
         width: 100%;    /* imagem responsiva */
     }
+    
     h2{
         text-align: start;      /* alinha á esquerda */
-        margin-bottom: 15px;   
+        margin-bottom: 20px;   
         margin-top: 0;             
     }
     p{
         line-height: 150%;       /* altura da linha ou espaçamento entre linhas */
         margin-bottom: 15px;    /* Margem inferior */
     }
-    ul,ol{
-        padding-left: 20px;
-        list-style: square; /* modificar o marcador */
-        li{
-            line-height: 170%;
-        }
-    }
 }
-
-.grid-especialidades{
-    display:flex ;           
-    flex-wrap: wrap;         
-    gap: 25px;  
-              
-    *{
-        flex-basis: 300px;      
-        flex-grow: 1;           
-        flex-shrink: 1;         
-    }
-    img{
-        width: 100%;            
-        object-fit: cover;      
-        height: 200px;          
-    }
-    h3{
-        color:#3b5ec8;
-        margin: 15px 0 8px 0;
-    }
-    P{
-        font-size: 0,95rem;
-        padding: 0px 10px;
-    }
-}
-
-
-
-
-    

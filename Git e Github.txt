@@ -54,4 +54,6 @@ https://www.origamid.com/projetos/flexbox-guia-completo/
 
 
 duplicar 
-sfhit = alt = seta para baixo 
+sfhit + alt + seta para baixo 
+organizar código
+shif + alt + F

@@ -3,23 +3,29 @@
 
 /* é um seletor de formatação iniversal e aplica-se tods as tags*/
 * {
-    margin: 0%;        /* margem externa (borda pra fora)*/
-    padding: 0%;      /*maregm interna ( borda pra dentro na logo )*/
+    margin: 0%;
+    /* margem externa (borda pra fora)*/
+    padding: 0%;
+    /*maregm interna ( borda pra dentro na logo )*/
 }
 
 /*Regra*/
 body {
     /*Propridade: valor*/
-   /* font-family: Arial, Helvetica, sans-serif; */
-   font-family:'poppins', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'poppins', sans-serif;
 
 }
 
 header {
-    background-color: #0e365f;    /* cor de fundo */
-    text-align: center;          /* centraliza um texto */
-    margin:0 ;                 /* top rigt bottom left */
-    padding:20px 0px 20px 0px;     /* top rigt bottom left */
+    background-color: #0e365f;
+    /* cor de fundo */
+    text-align: center;
+    /* centraliza um texto */
+    margin: 0;
+    /* top rigt bottom left */
+    padding: 20px 0px 20px 0px;
+    /* top rigt bottom left */
 
 }
 
@@ -29,20 +35,27 @@ footer {
     text-align: center;
     color: #777;
 }
+
 /* Formatação genérica para os links*/
-a{
-    text-decoration: none;      /* retirar o sublinhado dos links */
-    color: #492291;          /* alterar a cor dos links */
+a {
+    text-decoration: none;
+    /* retirar o sublinhado dos links */
+    color: #492291;
+    /* alterar a cor dos links */
 }
-a:hover{
-    text-decoration: underline;     /* voltar o sublinhao quando passar o mouse em cima */
+
+a:hover {
+    text-decoration: underline;
+    /* voltar o sublinhao quando passar o mouse em cima */
 }
 
 /* Formatação da home */
 
 main {
-    width: 1200px;            /* fixa a largura*/
-    margin: 0 auto 0 auto;   /* centralizar o container  ( elento de bloco) */
+    width: 1200px;
+    /* fixa a largura*/
+    margin: 0 auto 0 auto;
+    /* centralizar o container  ( elento de bloco) */
     padding: 40px 0px 40px 0px;
 }
 
@@ -50,7 +63,7 @@ section {
     margin-bottom: 40px
 }
 
-h2{
+h2 {
     text-align: center;
     margin-top: 50px;
 }
@@ -62,277 +75,397 @@ h2{
     p {
         /*CSS nesting (alinhamento de CSS*/
         /* p{} vai mudar o paragralho dentro da class*/
-        color: #444;                 /* cor da letra*/
-        font-size: 1.2rem;             /* tamanho da letra*/
-        line-height: 150%;             /* altura da linha ou espassamento entre linhas*/
+        color: #444;
+        /* cor da letra*/
+        font-size: 1.2rem;
+        /* tamanho da letra*/
+        line-height: 150%;
+        /* altura da linha ou espassamento entre linhas*/
     }
 
     h1 {
         font-size: 2rem;
         margin-bottom: 10px;
-        font-weight: 600;           /* carga com valores de 100 a 900 se a fonte permitir*/
-       /* font-style: italic;   Fonte em italic */ 
+        font-weight: 600;
+        /* carga com valores de 100 a 900 se a fonte permitir*/
+        /* font-style: italic;   Fonte em italic */
     }
 
 }
 
 .grid-home {
-    display: flex;           /* ( Flexbox ) coloca as imagens um do lado da outra grudada uma na outra */
-    flex-wrap: wrap;         /* permitir a quebra de linhas dos elementos */
-    gap: 25px;               /* espaçamento entre os elementos */
-    *{
-        flex-basis: 250px;      /* tamanho inicial para o elemento filho */
-        flex-grow: 1;           /* permite aumeto de tamanho */
-        flex-shrink: 1;         /* permite reduzir o tamanho */
+    display: flex;
+    /* ( Flexbox ) coloca as imagens um do lado da outra grudada uma na outra */
+    flex-wrap: wrap;
+    /* permitir a quebra de linhas dos elementos */
+    gap: 25px;
+
+    /* espaçamento entre os elementos */
+    * {
+        flex-basis: 250px;
+        /* tamanho inicial para o elemento filho */
+        flex-grow: 1;
+        /* permite aumeto de tamanho */
+        flex-shrink: 1;
+        /* permite reduzir o tamanho */
     }
-    a{
-        text-decoration: none;  /* Tirar o sublinhado */
-        color: #000 ;
+
+    a {
+        text-decoration: none;
+        /* Tirar o sublinhado */
+        color: #000;
     }
 }
 
-.card{
+.card {
     /* Aplicar sombra */
-    /* 0: deslocamento horizontal, 3px: vertical, 10px: desfoque, rgba: cor */ 
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* sombreado do card */
-    padding-bottom: 15px;   /* margem interna inferior */
-    border-radius: 10px; /* cantos arrendondados */
+    /* 0: deslocamento horizontal, 3px: vertical, 10px: desfoque, rgba: cor */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* sombreado do card */
+    padding-bottom: 15px;
+    /* margem interna inferior */
+    border-radius: 10px;
+    /* cantos arrendondados */
     text-align: center;
-    img{
-        width: 100%;            /* fixa a largura proporcional */
-        object-fit: cover;      /* imagem se ajusta ao conteiner proporção original */
-        height: 160px;          /* mantem altura original da imagem */
+
+    img {
+        width: 100%;
+        /* fixa a largura proporcional */
+        object-fit: cover;
+        /* imagem se ajusta ao conteiner proporção original */
+        height: 160px;
+        /* mantem altura original da imagem */
     }
-    h3{
-        color:#6a3bc8;
+
+    h3 {
+        color: #6a3bc8;
         margin: 15px 0 8px 0;
     }
-    P{
-        font-size: 0,95rem;
+
+    P {
+        font-size: 0, 95rem;
         padding: 0px 10px;
     }
 }
+
 /* Formatata o comportamento do card */
 .card:hover {
-    transform: translateY(-5px)     /* modifica a aparência visual do elemento */
+    transform: translateY(-5px)
+        /* modifica a aparência visual do elemento */
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
-    a{
+
+    a {
         background-color: #aaa;
-        padding: 10px 15px;              /* 10px top e bottom, 15px left e right */
-        text-decoration: none;           /* Tira o sublinhado do link */
+        padding: 10px 15px;
+        /* 10px top e bottom, 15px left e right */
+        text-decoration: none;
+        /* Tira o sublinhado do link */
         color: #fff;
-        border-radius: 8px;              /* arredondar os cantos */
-        
+        border-radius: 8px;
+        /* arredondar os cantos */
+
     }
 
-    a:hover{
-        transform: translateY(-2px); /* movimento para os botões de rede social */
+    a:hover {
+        transform: translateY(-2px);
+        /* movimento para os botões de rede social */
     }
 
-     /* nth-child seleciona elementos filhos de uma tag seguidas ( elementos filhos ) */
+    /* nth-child seleciona elementos filhos de uma tag seguidas ( elementos filhos ) */
 
-    a:nth-child(1){
-        background-color: #3b5998;    /* Cor para o facebok */
+    a:nth-child(1) {
+        background-color: #3b5998;
+        /* Cor para o facebok */
     }
 
-    a:nth-child(2){
-        background-color: #ff0000;    /* Cor para o youtube */
+    a:nth-child(2) {
+        background-color: #ff0000;
+        /* Cor para o youtube */
     }
 
-    a:nth-child(3){
-        background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);    /* Cor para o Instagram */
+    a:nth-child(3) {
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        /* Cor para o Instagram */
     }
 
-    a:nth-child(4){
-        background-color: #25d366;    /* Cor para o whatsapp */
+    a:nth-child(4) {
+        background-color: #25d366;
+        /* Cor para o whatsapp */
     }
 
-    a:nth-child(5){
-        background-color: #000;    /* Cor para o tiktok */
+    a:nth-child(5) {
+        background-color: #000;
+        /* Cor para o tiktok */
     }
 
 }
 
-    /* Link voltar rodapé das páginas */
-.voltar{
+/* Link voltar rodapé das páginas */
+.voltar {
     text-align: center;
     margin-top: 20px;
 }
 
 /* Formatação do grid de clínica */
-.grid-clinica{
-    display:flex;           /* opção por layout em grid (grade). O padrão para o display é block */
-    justify-content: space-between;     /* alinha pelas margens externas ( direita e esquerda ) */
+.grid-clinica {
+    display: flex;
+    /* opção por layout em grid (grade). O padrão para o display é block */
+    justify-content: space-between;
+    /* alinha pelas margens externas ( direita e esquerda ) */
     gap: 1.5rem;
     align-items: flex-start;
-    div{
-        flex-grow: 1;   /* permite expandir a largura */
-        flex-shrink: 1;     /* permite reduzir a largura */
-        flex-basis: 300px;   /* tamanho inicial */
+
+    div {
+        flex-grow: 1;
+        /* permite expandir a largura */
+        flex-shrink: 1;
+        /* permite reduzir a largura */
+        flex-basis: 300px;
+        /* tamanho inicial */
     }
-    img{
-        width: 100%;    /* imagem responsiva */
+
+    img {
+        width: 100%;
+        /* imagem responsiva */
     }
-    h2{
-        text-align: start;      /* alinha á esquerda */
-        margin-bottom: 15px;   
-        margin-top: 0;             
+
+    h2 {
+        text-align: start;
+        /* alinha á esquerda */
+        margin-bottom: 15px;
+        margin-top: 0;
     }
-    p{
-        line-height: 150%;       /* altura da linha ou espaçamento entre linhas */
-        margin-bottom: 15px;    /* Margem inferior */
+
+    p {
+        line-height: 150%;
+        /* altura da linha ou espaçamento entre linhas */
+        margin-bottom: 15px;
+        /* Margem inferior */
     }
-    ul,ol{
+
+    ul,
+    ol {
         padding-left: 20px;
-        list-style: square; /* modificar o marcador */
-        li{
+        list-style: square;
+
+        /* modificar o marcador */
+        li {
             line-height: 170%;
         }
     }
 }
 
-.grid-especialidades{
-    display:flex ;           
-    flex-wrap: wrap;         
-    gap: 25px;  
-              
-    *{
-        flex-basis: 300px;      
-        flex-grow: 1;           
-        flex-shrink: 1;         
+.grid-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    * {
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
-    img{
-        width: 100%;            
-        object-fit: cover;      
-        height: 200px;          
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
     }
-    h3{
-        color:#3b5ec8;
+
+    h3 {
+        color: #3b5ec8;
         margin: 15px 0 8px 0;
     }
-    P{
-        font-size: 0,95rem;
+
+    P {
+        font-size: 0, 95rem;
         padding: 0px 10px;
     }
 }
 
 /* formatação das tabelas */
 
-table{
+table {
     width: 100%;
-    border-collapse: collapse;  /* junta as bordas em uma só */
+    border-collapse: collapse;
+    /* junta as bordas em uma só */
 }
-th{
-     text-align: start;  /* alinhamento a esquerda */
+
+th {
+    text-align: start;
+    /* alinhamento a esquerda */
 }
- .tabela1 th{
+
+.tabela1 th {
     background-color: #aaa;
     border: 2px solid #aaa;
-    padding: 8px; /* usar o padding pq esta dentro da tabela se usar o margin vai dar espaço p/ fora */
- }
+    padding: 8px;
+    /* usar o padding pq esta dentro da tabela se usar o margin vai dar espaço p/ fora */
+}
 
-.tabela1 td{
+.tabela1 td {
     border: 2px solid #ccc;
     padding: 8px;
 }
-.tabela1 th:nth-child(3),       /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
-.tabela1 td:nth-child(3){         /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+
+.tabela1 th:nth-child(3),
+/* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+.tabela1 td:nth-child(3) {
+    /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
     text-align: end;
-    font-weight: 500;               /* destacar em preto */
+    font-weight: 500;
+    /* destacar em preto */
 }
-.tabela1 th:nth-child(4),      
-.tabela1 td:nth-child(4){         
+
+.tabela1 th:nth-child(4),
+.tabela1 td:nth-child(4) {
     text-align: center;
 }
 
-.tabela2 th{
+.tabela2 th {
     border-bottom: 2px solid #535050;
     padding: 8px;
 }
 
-.tabela2 td{
+.tabela2 td {
     border-bottom: 2px solid #ccc;
     padding: 8px;
 }
 
-.tabela2 tr{
-    border-bottom:2px solid #bcb2b2;
+.tabela2 tr {
+    border-bottom: 2px solid #bcb2b2;
     padding: 8px;
 }
 
-.tabela2 th:nth-child(3),       /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
-.tabela2 td:nth-child(3){         /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+.tabela2 th:nth-child(3),
+/* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+.tabela2 td:nth-child(3) {
+    /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
     text-align: end;
     font-weight: 500;
 }
 
-.tabela2 th:nth-child(4),      
-.tabela2 td:nth-child(4){         
+.tabela2 th:nth-child(4),
+.tabela2 td:nth-child(4) {
     text-align: center;
 }
 
 
-.tabela3 tr:nth-child(even){    /* even = é o mesmo que par e odd = é o mesmo que impar */
-   background-color: #aaa;
+.tabela3 tr:nth-child(even) {
+    /* even = é o mesmo que par e odd = é o mesmo que impar */
+    background-color: #aaa;
 }
 
-.tabela3 th{
+.tabela3 th {
     background-color: #aaa;
     border: 2px;
     padding: 8px;
 }
 
-.tabela3 td{
+.tabela3 td {
     border: 2px;
     padding: 8px;
 }
 
-.tabela3 th:nth-child(3),       /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
-.tabela3 td:nth-child(3){         /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+.tabela3 th:nth-child(3),
+/* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
+.tabela3 td:nth-child(3) {
+    /* pseudo seletor, escolhe onde quer ser feita a formatação na tabela */
     text-align: end;
     font-weight: 500;
 
 }
 
-.tabela3 th:nth-child(4),      
-.tabela3 td:nth-child(4){         
+.tabela3 th:nth-child(4),
+.tabela3 td:nth-child(4) {
     text-align: center;
 }
 
 /* Formatação da galeria de imagens */
 
-.galeria-destaques{
-    display: flex;              /* necessário, pois img é tag inline */
-    justify-content: center;     /* Centraliza a imagem  */
+.galeria-destaques {
+    display: flex;
+    /* necessário, pois img é tag inline */
+    justify-content: center;
+    /* Centraliza a imagem  */
     background-color: #333;
-    margin: 30px 0px 10px 0px;   /* top riht bottom left*/
-    img{
+    margin: 30px 0px 10px 0px;
+
+    /* top riht bottom left*/
+    img {
         width: 60%;
     }
 }
 
-.galeria-miniaturas{
+.galeria-miniaturas {
     display: flex;
     justify-content: space-between;
-    img{
+
+    img {
         width: 110px;
     }
 }
 
-.videos{
+.videos {
     text-align: center;
-    video{
+
+    video {
         width: 70%;
     }
-    iframe{
+
+    iframe {
         width: 70%;
-      /*  height: 415px;         é uma opção fixa */         
-        height: 60vh;           /* fica flexivel dependendo do aparelho */
+        /*  height: 415px;         é uma opção fixa */
+        height: 60vh;
+        /* fica flexivel dependendo do aparelho */
     }
 }
+
+.grid-convenio {
+
+    display: flex;
+    /* ( Flexbox ) coloca as imagens um do lado da outra grudada uma na outra */
+    flex-wrap: wrap;
+    /* permitir a quebra de linhas dos elementos */
+    gap: 35px;
+    text-align: center;
+
+    /* espaçamento entre os elementos */
+    * {
+        flex-basis: 200px;
+        /* tamanho inicial para o elemento filho */
+        flex-grow: 1;
+        /* permite aumeto de tamanho */
+        flex-shrink: 1;
+        /* permite reduzir o tamanho */
+    
+    }
+
+    a {
+        text-decoration: none;
+        /* Tirar o sublinhado */
+        color: #31179a;
+    }
+
+    h3 {
+        color: #3b6ac8;
+        margin: 15px 0 8px 0;
+    }
+
+    P {
+        font-size: 0, 95rem;
+        padding: 0px 10px;
+    }
+    i{
+        color: #1a0b55;
+        font-size: 80px;
+    }
+
+}
+

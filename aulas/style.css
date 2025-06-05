@@ -469,3 +469,56 @@ th {
 
 }
 
+.contatos{
+    display: flex;
+    justify-content: space-between;
+    div{            /* formatação para todas as divs de contato */
+        flex-basis: 45%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    div:last-child{     /* Formata a última div ( do mapa ) */
+        iframe{
+            width: 100%;
+            height: 60vh; /*(VH) tamanho de altura da tela sem barra de rolagem ( viewport ) */
+        }
+    }
+    label{
+        display: block; /*coloca um elemento um em baixo do outro (block)*/
+        text-transform: uppercase; /* caixa Alta ( letra maiuscula )*/
+        font-weight:bold; /* fica em negrito */
+        font-size:0.9rem;
+        margin-top: 20px;
+        color: #555; 
+    }
+    input[type=text], /* esse tipo de formatação só vai pegar esses types */
+    input[type=email],
+    textarea{
+    padding: 10px; 
+    width: 90%;
+    border: 1px solid #bbb;
+    border-radius: 5px;  /* bordas arredondadas */
+    }
+    select{
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+    input[type=checkbox]{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    input[type=submit]{
+        border-style: none;     /*retira a borda */
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;        /* mudar o cursor para mãozinha */
+    }
+    input[type=submit]:hover{         /* quando passar o mause no botão ele muda de cor */
+    background-color: #000;
+    }
+}
+
+

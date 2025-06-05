@@ -19,8 +19,58 @@
           <p> Formulário de contato e mapa de localização </p>
           </section>
 
-         <section class="grid-contatos">
-     
+         <section class="contatos">
+
+            <div>
+                <form action="" method="post" name="form1" id="form1">
+                    <div>
+                        <label for="">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                     </div>
+                    <div>
+                        <label for="">E-mail:</label>
+                        <input type="email" id="correio-eletronico" name="correio-eletronico" required>
+                        <!-- required - campo obrigatorio -->
+                    </div>
+                    <div>
+                        <!-- ID - indentifica o nome unico no javascript -->
+                         <!-- nome - indentifica o nome unico para o backend -->
+                        <label for="">Sexo:</label>
+                        <input type="radio" id="masculino" name="Sexo" value="masc">Masculino 
+                        <input type="radio" id="feminino" name="Sexo" value="fem">Feminino
+                        <!-- value-é o valor do campo pré requerido (deixa jé preenchido,o sistema lê o q esta dentro de velue)  -->
+                    </div>
+                    <div>
+                        <label for="">Assunto</label>
+                        <select nome="assunto" id="assunto">
+                            <option></option>
+                            <option>Crítica</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Informação</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Comentário</label>
+                        <textarea name="comentario" id="comentario" rows="6"></textarea>
+                    </div>
+
+                    <div>
+                        <!-- checkbox - seleção de marcador  multipla escolha sim ou nao -->
+                        <input type="checkbox" name="lgpd" id="lgpd" value="sim">
+                        Autorizo o uso dos dados de acordo com a <a href="#">política de privacidade</a>
+                    </div>
+                    <div>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar Dados">
+                        <!--type=submit vira botao para enviar dados -->
+                    </div>
+                </form>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1749086108694!6m8!1m7!1sBtgWcna7E6wM4a84r26Z6g!2m2!1d-22.56690016598108!2d-47.39861376355807!3f125.73570603979273!4f-3.7545301857180675!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
          </section>
 
          <section class="voltar">

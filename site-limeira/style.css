@@ -326,6 +326,7 @@ h2 {
 }
 
 .tabela-distancia td {
+    /*text-align: end;*/
     border-bottom: 2px dotted #ccc;
     padding: 8px;
 }

@@ -157,6 +157,7 @@ h2 {
 .redes-sociais {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 10px;
 
@@ -390,10 +391,8 @@ th {
 /* Formatação da galeria de imagens */
 
 .galeria-destaques {
-    display: flex;
-    /* necessário, pois img é tag inline */
-    justify-content: center;
-    /* Centraliza a imagem  */
+    display: flex;/* necessário, pois img é tag inline */
+    justify-content: center; /* Centraliza a imagem  */
     background-color: #333;
     margin: 30px 0px 10px 0px;
 
@@ -420,36 +419,26 @@ th {
     }
 
     iframe {
-        width: 70%;
-        /*  height: 415px;         é uma opção fixa */
-        height: 60vh;
-        /* fica flexivel dependendo do aparelho */
+        width: 70%;/*  height: 415px;         é uma opção fixa */
+        height: 60vh; /* fica flexivel dependendo do aparelho */
     }
 }
 
 .grid-convenio {
 
-    display: flex;
-    /* ( Flexbox ) coloca as imagens um do lado da outra grudada uma na outra */
-    flex-wrap: wrap;
-    /* permitir a quebra de linhas dos elementos */
+    display: flex; /* ( Flexbox ) coloca as imagens um do lado da outra grudada uma na outra */
+    flex-wrap: wrap; /* permitir a quebra de linhas dos elementos */
     gap: 35px;
-    text-align: center;
-
-    /* espaçamento entre os elementos */
+    text-align: center;/* espaçamento entre os elementos */
     * {
-        flex-basis: 200px;
-        /* tamanho inicial para o elemento filho */
-        flex-grow: 1;
-        /* permite aumeto de tamanho */
-        flex-shrink: 1;
-        /* permite reduzir o tamanho */
-    
+        flex-basis: 200px; /* tamanho inicial para o elemento filho */
+        flex-grow: 1;/* permite aumeto de tamanho */
+        flex-shrink: 1; /* permite reduzir o tamanho */
+
     }
 
     a {
-        text-decoration: none;
-        /* Tirar o sublinhado */
+        text-decoration: none;/* Tirar o sublinhado */
         color: #31179a;
     }
 
@@ -462,63 +451,175 @@ th {
         font-size: 0, 95rem;
         padding: 0px 10px;
     }
-    i{
+
+    i {
         color: #1a0b55;
         font-size: 80px;
     }
 
 }
 
-.contatos{
+.contatos {
     display: flex;
     justify-content: space-between;
-    div{            /* formatação para todas as divs de contato */
+
+    div {
+    /* formatação para todas as divs de contato */
         flex-basis: 45%;
         flex-grow: 1;
         flex-shrink: 1;
     }
-    div:last-child{     /* Formata a última div ( do mapa ) */
-        iframe{
+
+    div:last-child {/* Formata a última div ( do mapa ) */
+        iframe {
             width: 100%;
             height: 60vh; /*(VH) tamanho de altura da tela sem barra de rolagem ( viewport ) */
         }
     }
-    label{
-        display: block; /*coloca um elemento um em baixo do outro (block)*/
-        text-transform: uppercase; /* caixa Alta ( letra maiuscula )*/
-        font-weight:bold; /* fica em negrito */
-        font-size:0.9rem;
+
+    label {
+        display: block;/*coloca um elemento um em baixo do outro (block)*/
+        text-transform: uppercase;/* caixa Alta ( letra maiuscula )*/
+        font-weight: bold; /* fica em negrito */
+        font-size: 0.9rem;
         margin-top: 20px;
-        color: #555; 
+        color: #555;
     }
-    input[type=text], /* esse tipo de formatação só vai pegar esses types */
+
+    input[type=text],/* esse tipo de formatação só vai pegar esses types */
     input[type=email],
-    textarea{
-    padding: 10px; 
-    width: 90%;
-    border: 1px solid #bbb;
-    border-radius: 5px;  /* bordas arredondadas */
+    textarea {
+        padding: 10px;
+        width: 90%;
+        border: 1px solid #bbb;
+        border-radius: 5px;/* bordas arredondadas */
     }
-    select{
+
+    select {
         padding: 8px;
         border: 1px solid #bbb;
         border-radius: 5px;
     }
-    input[type=checkbox]{
+
+    input[type=checkbox] {
         margin-top: 25px;
         margin-bottom: 25px;
     }
-    input[type=submit]{
-        border-style: none;     /*retira a borda */
+
+    input[type=submit] {
+        border-style: none; /*retira a borda */
         background-color: #3b5998;
         color: #fff;
         padding: 10px 30px;
         border-radius: 5px;
-        cursor: pointer;        /* mudar o cursor para mãozinha */
+        cursor: pointer;/* mudar o cursor para mãozinha */
     }
-    input[type=submit]:hover{         /* quando passar o mause no botão ele muda de cor */
-    background-color: #000;
+
+    input[type=submit]:hover {/* quando passar o mause no botão ele muda de cor */
+        background-color: #000;
     }
 }
 
+/* Formatação do agendamento */
 
+.agendamentos {
+    margin: 0px auto;/*centralizar o container */
+    width: 50%;
+    text-align: center;/*centralizar o conteúdo */
+    label {
+        display: block;/* transformar em bloco para ficar separado do campo */
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: .9rem;
+        color: #555;
+    }
+
+    .form-group {
+        display: flex;/*dispodição lado a lado */
+        justify-content: space-between;/* Distribuição do conteúdo */
+    }
+
+    input[type=date],
+    input[type=time],
+    input[type=text],
+    select {
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+    }
+
+    input[type=time] {
+        padding: 7px;
+    }
+
+    input[type=text] {
+        width: 80%;
+    }
+
+    input[type=submit] {
+        border-style: none; /*retira a borda */
+        background-color: #3b5998;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;/* mudar o cursor para mãozinha */
+    }
+
+    input[type=submit]:hover {/* quando passar o mause no botão ele muda de cor */
+        background-color: #000;
+    }
+
+    div {
+        margin-top: 30px;
+    }
+}
+
+/* Formatação para layout responsivo */
+@media screen and (max-width:800px) {
+
+    /* media queries ( midia alternativa para tela ) */
+    /* header{ */
+    /* background-color: green; */
+    main {
+        width: 100%;
+    }
+
+    .grid-home {
+        * {
+            flex-basis: 100%;
+        }
+    }
+
+    .grid-clinica,
+    .grid-especialidades,
+    .grid-convenio,
+    .form-group {
+        flex-direction: column;     /* Mudar a direção do empilhamento das colunas */
+        align-items: center;
+    }
+
+    .videos {
+        iframe {
+            width: 100%;
+            height: 35vh;
+        }
+
+        video {
+            width: 100%;
+        }
+    }
+    .agendamentos{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* header{ */
+    /* background-color: red; */
+}
+
+@media screen and (max-width:400px) {
+    /* header{ */
+    /* background-color: yellow; */
+}

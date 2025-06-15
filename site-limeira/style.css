@@ -443,14 +443,10 @@ table {
 
 .tabela-esporte tr:nth-child(even) {
     /* even = é o mesmo que par e odd = é o mesmo que impar */
-    background-color: #3a3a3a;
-    
-}
-
-.tabela-esporte th {
-    background-color:#f7f3f3;
-    border: 2px;
-    padding: 8px;
+    background-color: #130c0c;
+    td{
+        color:#fff;
+    } 
 }
 
 .tabela-esporte td {
@@ -560,5 +556,44 @@ table {
 
     img {
         width: 110px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    /* media queries ( midia alternativa para tela ) */
+    /* header{ */
+    /* background-color: green; */
+    main {
+        width: 100%;
+    }
+
+    .grid-home {
+        * {
+            flex-basis: 100%;
+        }
+    }
+
+    .grid-esporte,
+    .grid-municipio,
+    .grid-turismo,
+    .grid-contato
+    .form-group {
+        flex-direction: column;     /* Mudar a direção do empilhamento das colunas */
+        align-items: center;
+    }
+
+    .videos {
+        iframe {
+            width: 100%;
+            height: 35vh;
+        }
+
+        video {
+            width: 100%;
+        }
+    }
+    .agendamentos{
+        width: 100%;
     }
 }
